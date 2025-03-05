@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVEDOC - Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/inp">Predict</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Prediction Result</h2>
+        <p>The predicted disease is: <strong>{{ prediction }}</strong></p>
+        <a href="/inp" class="btn">Try Again</a>
+    </main>
+    <footer>
+        <p>© 2023 LIVEDOC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
